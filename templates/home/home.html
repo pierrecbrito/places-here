@@ -11,12 +11,17 @@
         <ul id="links-header">
             <li><a class="link-header" href="#">Início</a></li>
             <li><a class="link-header" href="#">Features</a></li>
+            <li><a class="link-header" href="#">Documentação</a></li>
             <li><a class="link-header" href="#">Sobre</a></li>
             <li><a class="link-header" href="#">Contato</a></li>
         <ul>
     </header>
     <main>
         <section class="section" id="hero">
+            <video autoplay loop muted id="video-fundo">
+                <source src="{% static 'video/people-walking.mp4' %}" type="video/mp4">
+            </video>
+            <div id="hero-overlay"></div>
             <div class="container">
                 <div id="hero-cta">
                     <h2 class="title-2">Oriente as pessoas dentro da sua unidade<h2>
@@ -28,6 +33,14 @@
                     <img class="img" src="{% static 'img/cta.jpg' %}">
                 </div>
             </div>
+        </section>
+        <section class="section" id="apresentation">
+            <div class="container">
+                <h2 class="title-2">Feito para ser prático e fácil<h2>
+                <p class="paragraph-muted">Mostre os principais pontos aos seus visitantes sem baixar nenhum app</p>
+
+                <img id="apresentation-mobile" class="img" src="{% static 'img/mobile.png' %}">
+            </div>        
         </section>
     </main>
   

@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+    margin-bottom: 0;
 }
 
 .link-header {
@@ -16,19 +17,28 @@
     color: #000000;
 }
 
+
 .link-header:hover {
     color: #003CA4;
+}
+
+#hero {
+    position: relative;
+}
+
+#hero-cta .title-2, #paragraph-cta {
+    color: #FFFFFF;
 }
 
 #hero .container {
     display: flex;
     align-items: center;
     flex-direction: row;
-    min-height: 50vh
+    min-height: 80vh
 }
 
 #hero-cta, #image-cta {
-    max-width: 49%;
+    max-width: 50%;
     padding: 1.4rem;
 }
 
@@ -42,4 +52,45 @@
 
 #paragraph-cta {
     margin-top: 0.5rem;
+}
+
+#hero-cta .btn {
+    margin-top: 1.5rem;
+}
+
+#video-fundo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -1;
+    object-fit: fill;
+}
+
+#hero-overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#apresentation {
+    padding-top: 4rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#apresentation .container {
+    text-align: center;
+}
+
+#apresentation-mobile {
+    position: relative;
+    bottom: -15px;
+}
+
+#apresentation .title-2, #apresentation .paragraph-muted {
+    text-align: center;
 }
