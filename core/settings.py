@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
     #My Apps
     'core', 
-    'home'
+    'home',
+    'authentication'
 ]
 
 MIDDLEWARE = [

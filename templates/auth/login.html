@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block statics_dependecies %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block body_block %}
+    <main id="container-major">
+       
+        <form id="form">
+            <img src="{% static 'img/logo.png' %}">
+            <label>E-mail:</label>
+            <input type="email">
+            <label>Senha:</label>
+            <input type="password">
+
+            <button class="btn btn-primary">Entrar</button>
+        </form>
+    </main>
+  
+{% endblock %}
