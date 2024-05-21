@@ -1,7 +1,34 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block statics_dependecies %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+{% endblock %}
 
 {% block body_block %}
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <header id="header">
+        <ul id="links-header">
+            <li><a class="link-header" href="#">Início</a></li>
+            <li><a class="link-header" href="#">Features</a></li>
+            <li><a class="link-header" href="#">Sobre</a></li>
+            <li><a class="link-header" href="#">Contato</a></li>
+        <ul>
+    </header>
+    <main>
+        <section class="section" id="hero">
+            <div class="container">
+                <div id="hero-cta">
+                    <h2 class="title-2">Oriente as pessoas dentro da sua unidade<h2>
+                    <p id="paragraph-cta" class="paragraph-muted">Controle pontos de interesse, contrua um tour para sua unidade.
+                    </p>
+                    <button class="btn btn-primary">Conhecer solução</button>
+                </div>
+                <div id="image-cta">
+                    <img class="img" src="{% static 'img/cta.jpg' %}">
+                </div>
+            </div>
+        </section>
+    </main>
+  
 {% endblock %}
