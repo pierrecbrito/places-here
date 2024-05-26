@@ -23,12 +23,14 @@ p {
     font-size: 1rem;
 }
 
-input {
+input, input:focus-visible {
     font-size: 0.9rem;
     padding: 5px;
     width: 100%;
     margin-bottom: 1rem;
     border-radius: 3px;
+    outline: none;
+    background-color: #FFFFFF !important;
 }
 
 img {

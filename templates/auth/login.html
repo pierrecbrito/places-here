@@ -10,7 +10,7 @@
     <main id="container-major">
        
         <form id="form">
-            <img src="{% static 'img/logo.png' %}">
+            
             <label>E-mail:</label>
             <input type="email">
             <label>Senha:</label>
@@ -18,6 +18,11 @@
 
             <button class="btn btn-primary">Entrar</button>
         </form>
+        <div id="banner">
+            <div id="overlay"></div>
+            <img class="img fundo" src="{% static 'img/background-login.jpg' %}">
+            <h2 class="title-2">Oriente as pessoas de forma fácil e dinâmica!</h2>
+        </div>
     </main>
   
 {% endblock %}
